@@ -1,0 +1,9 @@
+.husky
+.vscode
+.eslintignore
+.eslintrc.js
+jest.config.ts
+prettier.config.cjs
+rollup.config.ts
+tsconfig.json
+src
