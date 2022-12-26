@@ -6,4 +6,5 @@ jest.config.ts
 prettier.config.cjs
 rollup.config.ts
 tsconfig.json
+tests
 src
