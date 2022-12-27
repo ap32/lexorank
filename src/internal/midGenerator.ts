@@ -179,8 +179,6 @@ function* generateWithSubrank(
     v += diff;
     const r = divAndRoundToNearest(v, divider);
 
-    console.log(r.toString(radix));
-
     result.rank = (r / subrankDivider)
       .toString(radix)
       .padStart(rankLength, '0');

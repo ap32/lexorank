@@ -1,10 +1,9 @@
 import { GeneratorYieldsTooMuchValues } from '@/errors';
-import type { RebalancingInfo } from '@/types';
 
-export default function getRebalancingInfo<T>(
-  g: Generator<T, RebalancingInfo>,
+export default function getGeneratorReturn<T, U>(
+  g: Generator<T, U>,
   expected: number,
-): RebalancingInfo {
+): U {
   const v = g.next();
   if (!v.done) {
     throw new GeneratorYieldsTooMuchValues(expected);

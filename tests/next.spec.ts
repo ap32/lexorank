@@ -63,7 +63,7 @@ describe('lrNext()', () => {
       });
     }
     {
-      const r = p('0|z:rst');
+      const r = p('1|z:rst');
       const { ranks, rebalancing } = nextCheck(r, 5);
       const ranksStr = ranks.map((r) => r.value);
       expect(nextStrCheck(r, 5)).toEqual({ ranks: ranksStr, rebalancing });

@@ -62,7 +62,7 @@ describe('lrPrev()', () => {
       });
     }
     {
-      const r = p('0|0:456');
+      const r = p('1|0:456');
       const { ranks, rebalancing } = prevCheck(r, 5);
       const ranksStr = ranks.map((r) => r.value);
       expect(prevStrCheck(r, 5)).toEqual({ ranks: ranksStr, rebalancing });

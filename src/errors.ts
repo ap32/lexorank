@@ -24,7 +24,7 @@ export class GeneratorYieldsTooMuchValues extends LexoRankError {
 export class InvalidCountError extends LexoRankError {
   constructor(count: number) {
     super(
-      `LexoRank count are expected to be an integer not less than 1, ` +
+      `LexoRank count is expected to be positive integer, ` +
         `but got ${JSON.stringify(count)}`,
     );
   }
@@ -54,6 +54,25 @@ export class NotEqualBucketsError extends LexoRankError {
   constructor(min: LexoRank, max: LexoRank) {
     super(
       `LexoRank buckets are expected to be equal, but got ${min.bucket} and ${max.bucket}`,
+    );
+  }
+}
+
+export class InvalidRankLengthError extends LexoRankError {
+  constructor(rankLength: number) {
+    super(
+      '`rankLength` is expected to be positive integer, ' +
+        `but got ${JSON.stringify(rankLength)}`,
+    );
+  }
+}
+
+export class NotEnoughRankLengthError extends LexoRankError {
+  constructor(rankLength: number, count: number) {
+    super(
+      `\`rankLength\` ${JSON.stringify(rankLength)} ` +
+        `is not enough for \`count\` ${JSON.stringify(count)}. ` +
+        `Calculate it using \`lrRankLengthByCount(count)\``,
     );
   }
 }

@@ -119,8 +119,8 @@ describe('lrMid()', () => {
       });
     }
     {
-      const r0 = p('0|0:789');
-      const r1 = p('0|0:abc');
+      const r0 = p('1|0:789');
+      const r1 = p('1|0:abc');
       const { ranks, rebalancing } = midCheck(r0, r1, 5);
       const ranksStr = ranks.map((r) => r.value);
       expect(midStrCheck(r0, r1, 5)).toEqual({ ranks: ranksStr, rebalancing });

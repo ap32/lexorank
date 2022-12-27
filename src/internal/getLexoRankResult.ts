@@ -1,5 +1,5 @@
 import { getArr } from '@/internal/getArr';
-import getRebalancingInfo from '@/internal/getRebalancingInfo';
+import getGeneratorReturn from '@/internal/getRebalancingInfo';
 import getVal from '@/internal/getVal';
 import type { RebalancingInfo } from '@/types';
 
@@ -20,12 +20,12 @@ export default function getLexoRankResult<T>(
   if (count !== undefined) {
     return {
       ranks: getArr(g, count),
-      rebalancing: getRebalancingInfo(g, count),
+      rebalancing: getGeneratorReturn(g, count),
     };
   }
 
   return {
     rank: getVal(g),
-    rebalancing: getRebalancingInfo(g, 1),
+    rebalancing: getGeneratorReturn(g, 1),
   };
 }
