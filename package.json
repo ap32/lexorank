@@ -14,11 +14,10 @@
     "eslint-fix": "eslint --fix --max-warnings 0 .",
     "prepare": "husky install",
     "validate": "npm-run-all --parallel test eslint-check",
-    "prepublish-only": "npm-run-all --parallel test eslint-check build",
+    "prepublishOnly": "npm-run-all --parallel test eslint-check build",
     "precommit": "npm run validate"
   },
   "license": "MIT",
-  "prepublishOnly": "npm run prepublish-only",
   "devDependencies": {
     "@rollup/plugin-alias": "^4.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
