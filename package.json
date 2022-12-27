@@ -2,6 +2,11 @@
   "name": "@ap32/lexorank",
   "version": "0.0.3",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap32/lexorank.git"
+  },
+  "license": "MIT",
   "main": "dist/lexorank.cjs",
   "module": "dist/lexorank.mjs",
   "browser": "dist/lexorank.umd.js",
@@ -17,7 +22,6 @@
     "prepublishOnly": "npm-run-all --parallel test eslint-check build",
     "precommit": "npm run validate"
   },
-  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-alias": "^4.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
