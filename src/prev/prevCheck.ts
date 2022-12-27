@@ -1,11 +1,11 @@
+import getLexoRankResult from '@/internal/getLexoRankResult';
+import { lrPrevGen } from '@/prev/prevGen';
 import type {
+  LexoRank,
   LexoRankArrayResult,
   LexoRankResult,
   LexoRankValueResult,
-} from '@/internal/getLexoRankResult';
-import getLexoRankResult from '@/internal/getLexoRankResult';
-import { lrPrevGen } from '@/prev/prevGen';
-import type { LexoRank } from '@/types';
+} from '@/types';
 
 export function lrPrevCheck(rank: LexoRank): LexoRankValueResult<LexoRank>;
 export function lrPrevCheck(

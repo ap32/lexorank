@@ -1,12 +1,12 @@
-import type {
-  LexoRankArrayResult,
-  LexoRankResult,
-  LexoRankValueResult,
-} from '@/internal/getLexoRankResult';
 import getLexoRankResult from '@/internal/getLexoRankResult';
 import midOverloadedArgs from '@/internal/midCheckArgs';
 import { lrMidStrGen } from '@/mid/midStrGen';
-import type { LexoRank } from '@/types';
+import type {
+  LexoRank,
+  LexoRankArrayResult,
+  LexoRankResult,
+  LexoRankValueResult,
+} from '@/types';
 
 export function lrMidStrCheck(
   rank0: LexoRank,

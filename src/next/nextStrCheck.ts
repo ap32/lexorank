@@ -1,11 +1,11 @@
+import getLexoRankResult from '@/internal/getLexoRankResult';
+import { lrNextStrGen } from '@/next/nextStrGen';
 import type {
+  LexoRank,
   LexoRankArrayResult,
   LexoRankResult,
   LexoRankValueResult,
-} from '@/internal/getLexoRankResult';
-import getLexoRankResult from '@/internal/getLexoRankResult';
-import { lrNextStrGen } from '@/next/nextStrGen';
-import type { LexoRank } from '@/types';
+} from '@/types';
 
 export function lrNextStrCheck(rank: LexoRank): LexoRankValueResult<string>;
 export function lrNextStrCheck(
