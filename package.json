@@ -17,9 +17,10 @@
     "test": "jest",
     "eslint-check": "eslint --max-warnings 0 .",
     "eslint-fix": "eslint --fix --max-warnings 0 .",
+    "tsc-check": "tsc --noEmit",
     "prepare": "husky install",
-    "validate": "npm-run-all --parallel test eslint-check",
-    "prepublishOnly": "npm-run-all --parallel test eslint-check build",
+    "validate": "npm-run-all --parallel test eslint-check tsc-check",
+    "prepublishOnly": "npm-run-all --parallel test eslint-check tsc-check build",
     "precommit": "npm run validate"
   },
   "devDependencies": {
