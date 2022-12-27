@@ -11,3 +11,13 @@ export type LexoRank = {
 export type RebalancingInfo =
   | { needRebalancing: true; bucket: Bucket }
   | { needRebalancing: false; bucket?: undefined };
+
+export type LexoRankValueResult<T> = {
+  rank: T;
+  rebalancing: RebalancingInfo;
+};
+export type LexoRankArrayResult<T> = {
+  ranks: T[];
+  rebalancing: RebalancingInfo;
+};
+export type LexoRankResult<T> = LexoRankValueResult<T> | LexoRankArrayResult<T>;
