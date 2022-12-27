@@ -5,4 +5,4 @@ export * from '@/lrNextBucket';
 export * from '@/prev';
 export * from '@/next';
 export * from '@/mid';
-export * from '@/rerank';
+export * from '@/rebalancing';

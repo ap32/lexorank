@@ -9,7 +9,7 @@ import type { Bucket } from '@/types';
 const radix = 36;
 const radixBigInt = 36n;
 
-export function rerankGenerator(
+export function rebalancingGenerator(
   bucket: Bucket,
   rankLength: number,
   count = 1,
